@@ -1,0 +1,28 @@
+GET HTTP://localhost:3000/lists
+
+###
+GET HTTP://localhost:3000/lists/1
+
+###
+POST HTTP://localhost:3000/lists
+Content-Type: application/json
+
+{
+  "name": "My List 1"
+}
+
+###
+PATCH HTTP://localhost:3000/lists/1
+Content-Type: application/json
+
+{
+  "name": "My List - UPDATED"
+}
+
+###
+DELETE  HTTP://localhost:3000/lists/1
+
+# FAKE API
+###
+GET http://localhost:8000/lists
+
